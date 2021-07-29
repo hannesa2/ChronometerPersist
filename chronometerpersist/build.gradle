@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+
 ext {
     // Where you will see your artifact in Bintray's web interface
     // The "bintrayName" should match the name of the Bintray repro.
@@ -28,8 +29,6 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
     }
     buildTypes {
         release {
@@ -49,6 +48,3 @@ dependencies {
     implementation "androidx.appcompat:appcompat:1.1.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
-
-apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/bintrayv1.gradle'
