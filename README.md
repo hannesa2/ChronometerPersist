@@ -54,20 +54,21 @@ The sample demonstrates how the library helps recover chronometer state even aft
 Repository available on jCenter
 
 ```groovy
-implementation 'com.minimize.library:chronometerpersist:1.2.0'
+implementation 'com.github.hannesa2:ChronometerPersist:1.3'
 ```
-*If the dependency fails to resolve, add this to your project repositories*
+
 ```groovy
-repositories {
-  maven {
-      url  "http://dl.bintray.com/ahmedrizwan/maven" 
-  }
+	allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
 ## License 
 ```
-Copyright 2015 Ahmed Rizwan
+Copyright 2021
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
