@@ -1,0 +1,3 @@
+install:
+ - ./gradlew :chronometerpersist:build :chronometerpersist:publishToMavenLocal -x :chronometerpersist:test
+ - find . -name "*.aar"
